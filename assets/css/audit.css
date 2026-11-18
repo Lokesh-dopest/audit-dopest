@@ -2133,8 +2133,8 @@ h2.h2 {
 
 /* ---------- About ---------- */
 .section.about {
-  padding-top: 100px;
-  padding-bottom: 120px;
+  padding-top: 220px;
+  padding-bottom: 140px;
 }
 
 .about .sec-head {
@@ -2172,16 +2172,13 @@ h2.h2 {
 
 .about-spline-wrap {
   width: 100%;
-  max-width: 500px;
+  max-width: 410px;
   aspect-ratio: 1 / 1;
-  border-radius: 24px;
+  border-radius: 22px;
   overflow: hidden;
   background: transparent;
   justify-self: end;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .about-spline-wrap iframe {
@@ -2189,35 +2186,30 @@ h2.h2 {
   height: 100%;
   border: 0;
   display: block;
-  transform: scale(1.18);
-  transform-origin: center center;
 }
 
 @media (max-width: 991px) {
   .section.about {
-    padding-top: 70px;
-    padding-bottom: 80px;
+    padding-top: 150px;
+    padding-bottom: 90px;
   }
 
   .about-spline-wrap {
-    max-width: 380px;
+    max-width: 320px;
     margin: 28px auto 0;
     justify-self: center;
-  }
-
-  .about-spline-wrap iframe {
-    transform: scale(1.1);
   }
 }
 
 @media (max-width: 479px) {
-  .about-spline-wrap {
-    max-width: 100%;
-    border-radius: 20px;
+  .section.about {
+    padding-top: 110px;
+    padding-bottom: 70px;
   }
 
-  .about-spline-wrap iframe {
-    transform: scale(1.05);
+  .about-spline-wrap {
+    max-width: 260px;
+    border-radius: 18px;
   }
 }
 
