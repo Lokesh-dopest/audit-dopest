@@ -2557,6 +2557,10 @@ h2.h2 {
 
 .modal-head-copy {
   padding: 28px 36px 20px;
+  background: #09090b;
+  position: relative;
+  z-index: 10;
+  flex-shrink: 0;
 }
 
 .modal-head-copy h3 {
@@ -2598,7 +2602,8 @@ h2.h2 {
   position: sticky;
   top: 0;
   background: #09090b;
-  z-index: 2;
+  box-shadow: 0 -16px 0 0 #09090b;
+  z-index: 5;
 }
 
 .modal-table td {
