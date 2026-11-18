@@ -715,6 +715,206 @@ h2.h2 {
   color: var(--muted);
 }
 
+/* ---------- Marquee / Client Logos ---------- */
+.marquee-section {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-head {
+  text-align: center;
+  margin-bottom: 56px;
+  padding: 0 24px;
+}
+
+.marquee-eyebrow {
+  display: inline-block;
+  font-family: var(--body);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--lime);
+}
+
+.marquee-wrap {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  mask-image: linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%);
+}
+
+.marquee-wrap::before,
+.marquee-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 220px;
+  max-width: 22vw;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.marquee-wrap::before {
+  left: 0;
+  background: linear-gradient(to right, #050505 0%, rgba(5, 5, 5, 0.94) 25%, rgba(5, 5, 5, 0.5) 65%, transparent 100%);
+}
+
+.marquee-wrap::after {
+  right: 0;
+  background: linear-gradient(to left, #050505 0%, rgba(5, 5, 5, 0.94) 25%, rgba(5, 5, 5, 0.5) 65%, transparent 100%);
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  will-change: transform;
+  animation: marquee-scroll 34s linear infinite;
+}
+
+.marquee-group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 96px;
+  padding-right: 96px;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.marquee-logo {
+  display: block;
+  height: 38px;
+  width: auto;
+  max-width: 240px;
+  object-fit: contain;
+  opacity: 0.85;
+  filter: grayscale(1);
+  user-select: none;
+  pointer-events: none;
+}
+
+.marquee-logo.logo-bluerails {
+  height: 32px;
+}
+
+.marquee-logo.logo-ivy {
+  height: 40px;
+  filter: grayscale(1) brightness(0.92);
+}
+
+.marquee-logo.logo-pixop {
+  height: 38px;
+}
+
+.marquee-logo.logo-fullview {
+  height: 38px;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@media (max-width: 991px) {
+  .marquee-section {
+    padding-top: 72px;
+    padding-bottom: 16px;
+  }
+
+  .marquee-head {
+    margin-bottom: 42px;
+  }
+
+  .marquee-wrap::before,
+  .marquee-wrap::after {
+    width: 120px;
+    max-width: 18vw;
+  }
+
+  .marquee-group {
+    gap: 64px;
+    padding-right: 64px;
+  }
+
+  .marquee-logo {
+    height: 30px;
+  }
+
+  .marquee-logo.logo-bluerails {
+    height: 25px;
+  }
+
+  .marquee-logo.logo-ivy {
+    height: 32px;
+  }
+
+  .marquee-logo.logo-pixop,
+  .marquee-logo.logo-fullview {
+    height: 30px;
+  }
+}
+
+@media (max-width: 479px) {
+  .marquee-section {
+    padding-top: 56px;
+    padding-bottom: 12px;
+  }
+
+  .marquee-head {
+    margin-bottom: 32px;
+  }
+
+  .marquee-eyebrow {
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+  }
+
+  .marquee-wrap::before,
+  .marquee-wrap::after {
+    width: 60px;
+    max-width: 16vw;
+  }
+
+  .marquee-group {
+    gap: 46px;
+    padding-right: 46px;
+  }
+
+  .marquee-logo {
+    height: 25px;
+  }
+
+  .marquee-logo.logo-bluerails {
+    height: 21px;
+  }
+
+  .marquee-logo.logo-ivy {
+    height: 27px;
+  }
+
+  .marquee-logo.logo-pixop,
+  .marquee-logo.logo-fullview {
+    height: 25px;
+  }
+}
+
 /* ---------- Section frame ---------- */
 .section {
   padding-top: 220px;
@@ -830,6 +1030,7 @@ h2.h2 {
 /* ---------- Services / Approach Carousel ---------- */
 .services-section {
   overflow-x: clip;
+  padding-top: 140px;
   padding-bottom: 80px;
 }
 
@@ -2425,6 +2626,8 @@ h2.h2 {
   color: var(--lime);
   text-decoration: underline;
   text-underline-offset: 3px;
+  word-break: break-word;
+  overflow-wrap: anywhere;
   transition: color 0.15s ease, opacity 0.15s ease;
 }
 
