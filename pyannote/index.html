@@ -21,21 +21,24 @@
 
   <!-- ============================== NAV ============================== -->
   <header class="nav" id="nav">
-    <div class="wrap">
-      <a href="#top" class="brand" aria-label="Dopest × Pyannote">
-        <img src="../assets/img/dopest-logo.png" alt="Dopest" class="brand-logo" width="30" height="30">
-        <span class="brand-sep">×</span>
-        <img src="../assets/img/pyannote-logo.png" alt="Pyannote" class="brand-logo brand-logo-client" width="30"
-          height="30">
+    <div class="wrap nav-wrap">
+      <a href="#top" class="brand" aria-label="Dopest">
+        <svg class="brand-logo" width="36" height="36" viewBox="0 0 768 768" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M25.5859 153.593C25.5859 111.178 59.9705 76.793 102.386 76.793H473.586C487.724 76.793 499.186 88.2545 499.186 102.393V217.593C499.186 245.87 522.109 268.793 550.386 268.793H665.586C679.724 268.793 691.186 280.255 691.186 294.393V486.393C691.186 627.778 576.571 742.393 435.186 742.393H102.386C59.9705 742.393 25.5859 708.008 25.5859 665.593V153.593Z" fill="#D3D3D3"/>
+          <rect x="537.594" y="25.5938" width="204.8" height="204.8" rx="51.2" fill="#D3D3D3"/>
+        </svg>
       </a>
-      <nav class="nav-links" aria-label="Sections">
-        <a href="#technical">Technical SEO</a>
-        <a href="#content">Content</a>
-        <a href="#paid">Paid search</a>
-        <a href="#more">More</a>
-        <a href="https://calendly.com/shifa-dopest/new-meeting" target="_blank" rel="noopener" class="btn btn-primary"
-          data-link="book">Book a call</a>
+      <nav class="nav-center-pill" aria-label="Main Navigation">
+        <a href="https://www.dopest.io/#about" target="_blank" rel="noopener">About</a>
+        <a href="https://www.dopest.io/#services" target="_blank" rel="noopener">Stack</a>
+        <a href="https://www.dopest.io/#industries" target="_blank" rel="noopener">Industries</a>
+        <a href="https://www.dopest.io/pricing" target="_blank" rel="noopener">Pricing</a>
+        <a href="https://www.dopest.io/ai-directory" target="_blank" rel="noopener">AI Directory</a>
       </nav>
+      <div class="nav-right">
+        <a href="https://calendly.com/shifa-dopest/new-meeting" target="_blank" rel="noopener" class="btn btn-primary"
+          data-link="book">Book a Call</a>
+      </div>
     </div>
     <span class="nav-progress" id="progress"></span>
   </header>
@@ -44,20 +47,21 @@
 
     <!-- ============================== HERO ============================== -->
     <section class="hero">
-      <div class="wrap">
-        <div class="hero-top">
-          <span class="eyebrow kicker">Growth audit</span>
-        </div>
+      <div class="wrap hero-wrap">
+        <div class="hero-left">
+          <div class="hero-top">
+            <span class="eyebrow kicker">Growth audit</span>
+          </div>
 
-        <h1 class="h1" data-reveal>INBOUND GROWTH ENGINE<br>PYANNOTE</h1>
+          <h1 class="h1">INBOUND GROWTH ENGINE<br>PYANNOTE</h1>
 
-        <div class="hero-grid">
-          <p class="lead" data-reveal style="--rd:.1s">
+          <p class="lead">
             We analyzed Pyannote's organic visibility, competitive landscape, and website to identify
             opportunities to improve technical SEO, build a scalable content pipeline, and drive qualified
             acquisition through paid search.
           </p>
-          <div class="cta" data-reveal style="--rd:.2s">
+
+          <div class="cta">
             <a class="btn btn-primary" href="#technical">
               View the findings
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
@@ -67,6 +71,29 @@
             </a>
             <a class="btn btn-line" href="https://calendly.com/shifa-dopest/new-meeting" target="_blank" rel="noopener"
               data-link="book">Book a call</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-collab-card">
+            <div class="collab-item collab-dopest">
+              <div class="collab-logo-wrap">
+                <svg class="collab-svg" width="88" height="88" viewBox="0 0 768 768" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M25.5859 153.593C25.5859 111.178 59.9705 76.793 102.386 76.793H473.586C487.724 76.793 499.186 88.2545 499.186 102.393V217.593C499.186 245.87 522.109 268.793 550.386 268.793H665.586C679.724 268.793 691.186 280.255 691.186 294.393V486.393C691.186 627.778 576.571 742.393 435.186 742.393H102.386C59.9705 742.393 25.5859 708.008 25.5859 665.593V153.593Z" fill="#D3D3D3"/>
+                  <rect x="537.594" y="25.5938" width="204.8" height="204.8" rx="51.2" fill="#D3D3D3"/>
+                </svg>
+              </div>
+              <span class="collab-name">Dopest</span>
+            </div>
+
+            <span class="collab-sep">×</span>
+
+            <div class="collab-item collab-pyannote">
+              <div class="collab-logo-wrap">
+                <img src="../assets/img/pyannote-logo.png" alt="Pyannote" class="collab-img" width="88" height="88">
+              </div>
+              <span class="collab-name">Pyannote</span>
+            </div>
           </div>
         </div>
       </div>
@@ -379,14 +406,7 @@
             </div>
             <div class="industry-content">
               <div class="industry-content-inner">
-                <p>We check that every signup, API key request and demo booking is measured correctly across Google Ads,
-                  Bing and analytics, so budget decisions rest on real numbers.</p>
-                <div class="industry-tags">
-                  <span>Google Ads</span>
-                  <span>Bing</span>
-                  <span>Analytics</span>
-                  <span>Attribution</span>
-                </div>
+                <p>We check that every signup and demo booking is measured correctly across paid channels so budget decisions rest on real numbers.</p>
               </div>
             </div>
           </div>
@@ -410,12 +430,6 @@
               <div class="industry-content-inner">
                 <p>We review the path from landing page to signup and find where developers drop off, from docs entry
                   points to pricing and onboarding.</p>
-                <div class="industry-tags">
-                  <span>Landing Pages</span>
-                  <span>Docs Flow</span>
-                  <span>Pricing</span>
-                  <span>Onboarding</span>
-                </div>
               </div>
             </div>
           </div>
@@ -438,12 +452,6 @@
             <div class="industry-content">
               <div class="industry-content-inner">
                 <p>We track and optimize how Pyannote appears across ChatGPT, Perplexity and Google AI Overviews, structuring documentation and technical content so your platform is recommended when developers query AI engines.</p>
-                <div class="industry-tags">
-                  <span>ChatGPT</span>
-                  <span>AI Overviews</span>
-                  <span>Perplexity</span>
-                  <span>Citations</span>
-                </div>
               </div>
             </div>
           </div>
@@ -467,12 +475,6 @@
               <div class="industry-content-inner">
                 <p>Paid channels beyond search, to reach developers and technical buyers earlier in their evaluation and
                   retarget visitors to the docs.</p>
-                <div class="industry-tags">
-                  <span>LinkedIn</span>
-                  <span>ChatGPT Ads</span>
-                  <span>Meta</span>
-                  <span>Retargeting</span>
-                </div>
               </div>
             </div>
           </div>
@@ -483,13 +485,12 @@
     <!-- ============================== ABOUT ============================== -->
     <section class="section about" id="about">
       <div class="wrap">
-        <div class="sec-head"><span class="eyebrow">About Dopest</span></div>
         <div class="about-grid">
-          <div>
-            <h2 class="display h2">Technical SEO, content and paid search, run as one growth system.</h2>
+          <div class="about-content">
+            <div class="sec-head"><span class="eyebrow">About Dopest</span></div>
+            <h2 class="display h2">Full stack growth.<br>One simple subscription.</h2>
             <p class="desc">
-              Dopest builds inbound growth engines for technical products: one plan, built from your real
-              site and real search results.
+              Build, launch, and scale the growth engine your business needs with an embedded team of senior growth operators and agentic workflows, built to accelerate growth without adding overhead.
             </p>
             <div class="about-cta">
               <a class="btn btn-primary" href="https://dopest.io/pricing" target="_blank" rel="noopener"
@@ -501,6 +502,9 @@
                 </svg>
               </a>
             </div>
+          </div>
+          <div class="about-spline-wrap">
+            <iframe src="https://spline-logo.onrender.com/" frameborder="0" width="100%" height="100%" allow="autoplay; fullscreen" loading="lazy"></iframe>
           </div>
         </div>
       </div>
@@ -535,96 +539,95 @@
             <table class="modal-table">
               <thead>
                 <tr>
-                  <th>URL</th>
-                  <th>Status</th>
-                  <th>Depth</th>
-                  <th>Inlinks</th>
-                  <th>Indexability</th>
-                  <th>Finding</th>
-                  <th>Priority</th>
+                  <th style="min-width: 190px;">Audit Area</th>
+                  <th style="min-width: 250px;">Issue / Finding</th>
+                  <th style="min-width: 290px;">Evidence / Scope</th>
+                  <th style="min-width: 270px;">Affected Pages</th>
+                  <th style="min-width: 270px;">Potential SEO Impact</th>
+                  <th style="min-width: 290px;">Recommendation</th>
                 </tr>
               </thead>
-              <tbody class="is-blurred">
+              <tbody>
                 <tr>
-                  <td>pyannote.ai/</td>
-                  <td>200</td>
-                  <td>0</td>
-                  <td>93</td>
-                  <td>Indexable</td>
-                  <td>Missing SoftwareApplication structured data</td>
-                  <td>Medium</td>
+                  <td>Indexation &amp; XML sitemap</td>
+                  <td>A 404 error URL is included in the XML sitemap</td>
+                  <td>The /404 URL returns HTTP 404 but is still listed in the sitemap. Crawl sheet flags it as a broken sitemap URL.</td>
+                  <td><code>https://www.pyannote.ai/404</code></td>
+                  <td>Submitting an error URL weakens sitemap quality, wastes crawl budget, and creates indexation noise.</td>
+                  <td>Clean sitemap so it contains only preferred, indexable 200 URLs. Recheck sitemap output after publishing.</td>
                 </tr>
                 <tr>
-                  <td>pyannote.ai/docs/overview</td>
-                  <td>200</td>
-                  <td>1</td>
-                  <td>48</td>
-                  <td>Indexable</td>
-                  <td>Missing BreadcrumbList schema markup</td>
-                  <td>Medium</td>
+                  <td>Crawlability &amp; JS rendering</td>
+                  <td>Blog articles surfaced via JS Load More without crawlable HTML inlinks</td>
+                  <td>22 URLs classified as JS / Load-More orphans with zero crawlable &lt;a href&gt; inlinks in the initial crawl.</td>
+                  <td><code>/blog/pyannote-vs.-nvidia-nemo<br>/blog/top-7-speaker-diarization...</code></td>
+                  <td>Weakens discovery paths and internal authority flow, especially for newer or deeper articles.</td>
+                  <td>Ensure blog pagination or Load More exposes standard crawlable links, plus stable category archives.</td>
                 </tr>
                 <tr>
-                  <td>pyannote.ai/blog/v3-release</td>
-                  <td>200</td>
-                  <td>2</td>
-                  <td>14</td>
-                  <td>Indexable</td>
-                  <td>LCP image unoptimized (3.4s load)</td>
-                  <td>High</td>
+                  <td>Structured data</td>
+                  <td>No JSON-LD structured data is detected on sampled main-site core pages</td>
+                  <td>The core-page tab reports no JSON-LD on 93 of 93 sampled main-site URLs (docs reports JSON-LD on 41/41).</td>
+                  <td><code>https://www.pyannote.ai/benchmark<br>https://www.pyannote.ai/solutions<br>https://www.pyannote.ai/blog/precision-3</code></td>
+                  <td>Reduces search engines' ability to interpret contextual relationships; limits rich results eligibility and search visibility.</td>
+                  <td>Add relevant structured data prioritizing Organization, Product/Platform, Article and Breadcrumb templates.</td>
                 </tr>
                 <tr>
-                  <td>pyannote.ai/api/v1/diarize</td>
-                  <td>200</td>
-                  <td>1</td>
-                  <td>37</td>
-                  <td>Indexable</td>
-                  <td>Meta description missing on API reference</td>
-                  <td>Medium</td>
+                  <td>On-page heading structure</td>
+                  <td>Many core pages are missing a primary H1</td>
+                  <td>61 of 93 core-page records have no H1 heading detected. Only 4 records have exactly one H1.</td>
+                  <td><code>https://www.pyannote.ai/benchmark<br>https://www.pyannote.ai/solutions<br>https://www.pyannote.ai/speaker-platform</code></td>
+                  <td>The page's primary topic is less explicit in document structure, reducing semantic clarity and accessibility.</td>
+                  <td>Give each indexable page one clear, visible primary heading that accurately reflects its unique topic and search intent.</td>
                 </tr>
                 <tr>
-                  <td>pyannote.ai/benchmarks/der</td>
-                  <td>200</td>
-                  <td>2</td>
-                  <td>21</td>
-                  <td>Indexable</td>
-                  <td>Title tag exceeds 60 characters</td>
-                  <td>Low</td>
+                  <td>Image accessibility &amp; image SEO</td>
+                  <td>Most sampled marketing-site images have missing or empty alternative text</td>
+                  <td>Core-page audit records 1,046 of 1,053 images without meaningful alt text across 86 pages; 80 pages fully unflagged.</td>
+                  <td><code>https://www.pyannote.ai/about-us<br>https://www.pyannote.ai/pricing<br>https://www.pyannote.ai/solutions/transcription-indexing</code></td>
+                  <td>Search engines receive less visual context; screen-reader users miss information and Image search traffic is lost.</td>
+                  <td>Add concise descriptive alt text to informative images and keep decorative assets intentionally empty.</td>
                 </tr>
-                <tr>
-                  <td>pyannote.ai/pricing</td>
-                  <td>200</td>
-                  <td>1</td>
-                  <td>52</td>
-                  <td>Indexable</td>
-                  <td>Missing FAQ &amp; Product offer schema</td>
-                  <td>High</td>
+                <!-- Blurred locked rows -->
+                <tr class="is-blurred">
+                  <td>Internal link integrity</td>
+                  <td>An internal blog link points to a 404 destination</td>
+                  <td>One broken internal link recorded in blog pointing to a changelog path returning HTTP 404.</td>
+                  <td><code>Source: /blog/voice-ai...<br>Target: /changelog/:acusJSS14</code></td>
+                  <td>Visitors and search crawlers encounter a dead end; damages user journeys and wastes crawl activity.</td>
+                  <td>Replace broken destination with correct live resource or remove link. Audit other release links.</td>
                 </tr>
-                <tr>
-                  <td>pyannote.ai/integrations/whisper</td>
-                  <td>200</td>
-                  <td>2</td>
-                  <td>18</td>
-                  <td>Indexable</td>
-                  <td>Orphaned from main documentation sidebar</td>
-                  <td>Medium</td>
+                <tr class="is-blurred">
+                  <td>Redirect &amp; sitemap hygiene</td>
+                  <td>Redirecting URL listed in sitemap &amp; internal nav</td>
+                  <td>The /usecases URL returns 308 resolving to /solutions. The sitemap lists redirecting URL, and /streaming links to it.</td>
+                  <td><code>/usecases &rarr; /solutions<br>Source: /streaming</code></td>
+                  <td>Unnecessary redirect hops send mixed signals about preferred destination; internal links should point direct.</td>
+                  <td>Update sitemap and internal references to use final preferred destination /solutions directly.</td>
                 </tr>
-                <tr>
-                  <td>pyannote.ai/docs/streaming</td>
-                  <td>200</td>
-                  <td>2</td>
-                  <td>29</td>
-                  <td>Indexable</td>
-                  <td>Duplicate H1 tag across sub-sections</td>
-                  <td>Low</td>
+                <tr class="is-blurred">
+                  <td>Internal linking &amp; page discovery</td>
+                  <td>Key commercial pages have no or very few internal inlinks</td>
+                  <td>5 pages with 0 internal inlinks, 6 reachable only through orphan pages, and 16 with just 1 inlink.</td>
+                  <td><code>/speaker-identification<br>/assemblyai-alternatives<br>/blog/precision-3</code></td>
+                  <td>Important product, comparison and educational pages harder to discover; limited internal link equity.</td>
+                  <td>Strengthen contextual links from relevant solution pages, product pages, related articles and docs.</td>
                 </tr>
-                <tr>
-                  <td>pyannote.ai/blog/speaker-embeddings</td>
-                  <td>200</td>
-                  <td>3</td>
-                  <td>6</td>
-                  <td>Indexable</td>
-                  <td>Low internal link equity from core pages</td>
-                  <td>Medium</td>
+                <tr class="is-blurred">
+                  <td>On-page heading structure</td>
+                  <td>Multiple H1 headings appear on a number of core pages</td>
+                  <td>28 of 93 core-page records contain more than one H1; several pages have 2–3 H1s, with one page reporting 10.</td>
+                  <td><code>https://www.pyannote.ai/<br>https://www.pyannote.ai/solutions/transcription-indexing</code></td>
+                  <td>Multiple primary headings blur content hierarchy and make main subject less clear to users and search engines.</td>
+                  <td>Review page templates and heading hierarchy so each page has one primary H1 with subordinate sections.</td>
+                </tr>
+                <tr class="is-blurred">
+                  <td>Documentation metadata</td>
+                  <td>Indexable documentation pages have weak SERP metadata</td>
+                  <td>19 of 41 docs pages missing meta descriptions; 19 titles are short and 3 overlong.</td>
+                  <td><code>/api-reference/create-stream<br>/api-reference/diarize</code></td>
+                  <td>Search engines generate random snippets; reduces CTR and clarity in developer search results.</td>
+                  <td>Create distinct, task-focused titles and descriptions for indexable API reference and guides.</td>
                 </tr>
               </tbody>
             </table>
@@ -641,96 +644,97 @@
             <table class="modal-table">
               <thead>
                 <tr>
-                  <th>Target Keyword</th>
-                  <th>Intent</th>
-                  <th>Volume</th>
-                  <th>KD</th>
-                  <th>Current Pos</th>
-                  <th>Cluster Role</th>
-                  <th>Content Format</th>
+                  <th style="min-width: 170px;">Page Type</th>
+                  <th style="min-width: 230px;">Proposed URL</th>
+                  <th style="min-width: 290px;">Working Title</th>
+                  <th style="min-width: 210px;">Primary Keyword</th>
+                  <th style="min-width: 110px;">Monthly Vol</th>
+                  <th style="min-width: 280px;">Action</th>
+                  <th style="min-width: 260px;">Competitor Benchmark</th>
                 </tr>
               </thead>
-              <tbody class="is-blurred">
+              <tbody>
                 <tr>
-                  <td>speaker diarization api</td>
-                  <td>Commercial</td>
-                  <td>2,400</td>
-                  <td>32</td>
-                  <td>#7</td>
-                  <td>Pillar Page</td>
-                  <td>Product &amp; API Hub</td>
-                </tr>
-                <tr>
-                  <td>pyannote vs deepgram diarization</td>
-                  <td>Commercial</td>
-                  <td>720</td>
-                  <td>24</td>
-                  <td>Not ranked</td>
-                  <td>Cluster Spoke</td>
-                  <td>DER Benchmark Comparison</td>
-                </tr>
-                <tr>
-                  <td>real time speaker diarization python</td>
-                  <td>Informational</td>
-                  <td>1,600</td>
-                  <td>28</td>
-                  <td>#4</td>
-                  <td>Cluster Spoke</td>
-                  <td>Developer Implementation Guide</td>
-                </tr>
-                <tr>
-                  <td>diarization error rate benchmark</td>
-                  <td>Commercial</td>
-                  <td>1,100</td>
-                  <td>29</td>
-                  <td>Not ranked</td>
-                  <td>Cluster Spoke</td>
-                  <td>Evaluation &amp; Research Report</td>
-                </tr>
-                <tr>
-                  <td>speaker embedding extraction api</td>
-                  <td>Commercial</td>
+                  <td>Hub page</td>
+                  <td><code>/speaker-diarization</code></td>
+                  <td>Speaker Diarization: A Developer's Guide to Who Spoke When</td>
+                  <td>speaker diarization</td>
                   <td>880</td>
-                  <td>26</td>
-                  <td>#11</td>
-                  <td>Cluster Spoke</td>
-                  <td>Technical Architecture Guide</td>
+                  <td>Build new. Hub summarises the topic and links to every spoke below</td>
+                  <td>Picovoice Falcon Speaker Diarization</td>
                 </tr>
                 <tr>
-                  <td>whisper speaker diarization pipeline</td>
-                  <td>Informational</td>
-                  <td>2,100</td>
-                  <td>31</td>
-                  <td>#6</td>
-                  <td>Cluster Spoke</td>
-                  <td>Integration Tutorial</td>
+                  <td>Providers hub</td>
+                  <td><code>/speaker-diarization/providers</code></td>
+                  <td>Best Speaker Diarization APIs and Models Compared in 2026</td>
+                  <td>best speaker diarization</td>
+                  <td>10</td>
+                  <td>Build hub that links out to reviews and reuses Top 7 content</td>
+                  <td>AssemblyAI: Top 8 speaker diarization APIs</td>
                 </tr>
                 <tr>
-                  <td>best speaker diarization models</td>
-                  <td>Commercial</td>
-                  <td>1,400</td>
-                  <td>35</td>
-                  <td>Not ranked</td>
-                  <td>Cluster Spoke</td>
-                  <td>Model Comparison Guide</td>
+                  <td>Competitor review</td>
+                  <td><code>/speaker-diarization/providers/assemblyai</code></td>
+                  <td>AssemblyAI Speaker Diarization Review</td>
+                  <td>assemblyai speaker diarization</td>
+                  <td>90</td>
+                  <td>Build new dedicated review (needs client sign-off)</td>
+                  <td>Gladia review of AssemblyAI</td>
                 </tr>
                 <tr>
-                  <td>assemblyai vs pyannote accuracy</td>
-                  <td>Commercial</td>
-                  <td>590</td>
-                  <td>21</td>
-                  <td>Not ranked</td>
-                  <td>Cluster Spoke</td>
-                  <td>Competitor Comparison</td>
+                  <td>Competitor review</td>
+                  <td><code>/speaker-diarization/providers/deepgram</code></td>
+                  <td>Deepgram Speaker Diarization Review</td>
+                  <td>deepgram diarization</td>
+                  <td>50</td>
+                  <td>Build new dedicated comparison page (client sign-off)</td>
+                  <td>Gladia review of Deepgram</td>
                 </tr>
                 <tr>
-                  <td>streaming audio speaker separation</td>
-                  <td>Commercial</td>
-                  <td>920</td>
-                  <td>27</td>
-                  <td>#9</td>
-                  <td>Cluster Spoke</td>
-                  <td>Use-Case Deep Dive</td>
+                  <td>Competitor review</td>
+                  <td><code>/speaker-diarization/providers/whisperx</code></td>
+                  <td>Whisper and WhisperX Diarization Review</td>
+                  <td>whisper diarization</td>
+                  <td>110</td>
+                  <td>Build new. Largest provider-style search volume in cluster</td>
+                  <td>AssemblyAI: Whisper speaker diarization</td>
+                </tr>
+                <!-- Blurred locked rows -->
+                <tr class="is-blurred">
+                  <td>Competitor review</td>
+                  <td><code>/speaker-diarization/providers/nvidia-nemo</code></td>
+                  <td>NVIDIA NeMo Speaker Diarization Review</td>
+                  <td>nvidia nemo speaker diarization</td>
+                  <td>50</td>
+                  <td>Build new comparison deep-dive (client sign-off)</td>
+                  <td>Katonic: NeMo overview for enterprise</td>
+                </tr>
+                <tr class="is-blurred">
+                  <td>Competitor review</td>
+                  <td><code>/speaker-diarization/providers/google-speech-to-text</code></td>
+                  <td>Google Speech-to-Text Diarization Review</td>
+                  <td>google speech to text diarization</td>
+                  <td>10</td>
+                  <td>Build new. Consider one combined cloud page with AWS/Azure</td>
+                  <td>AssemblyAI vs Google Speech-to-Text</td>
+                </tr>
+                <tr class="is-blurred">
+                  <td>Developer Guide</td>
+                  <td><code>/speaker-diarization/article/whisper-speaker-diarization</code></td>
+                  <td>How to Add Speaker Diarization to Whisper</td>
+                  <td>whisper diarization</td>
+                  <td>110</td>
+                  <td>Build new developer tutorial, strongest fit for technical buyers</td>
+                  <td>AssemblyAI: Whisper speaker diarization</td>
+                </tr>
+                <tr class="is-blurred">
+                  <td>Developer Guide</td>
+                  <td><code>/speaker-diarization/article/speaker-diarization-python</code></td>
+                  <td>Speaker Diarization in Python: Open Source &amp; API Options</td>
+                  <td>speaker diarization python</td>
+                  <td>10</td>
+                  <td>Build new dedicated tutorial with copy-paste code snippets</td>
+                  <td>Picovoice Falcon Python quickstart</td>
                 </tr>
               </tbody>
             </table>
@@ -747,96 +751,98 @@
             <table class="modal-table">
               <thead>
                 <tr>
-                  <th>Campaign</th>
-                  <th>Ad Group</th>
-                  <th>Target Keyword</th>
-                  <th>Match Type</th>
-                  <th>Volume</th>
-                  <th>Est. CPC</th>
-                  <th>Landing Page</th>
+                  <th style="min-width: 230px;">Campaign</th>
+                  <th style="min-width: 240px;">Ad Group</th>
+                  <th style="min-width: 320px;">Target Keywords</th>
+                  <th style="min-width: 120px;">Match Type</th>
+                  <th style="min-width: 280px;">Landing Page URL</th>
                 </tr>
               </thead>
-              <tbody class="is-blurred">
+              <tbody>
                 <tr>
-                  <td>Core — Commercial API</td>
-                  <td>Diarization API</td>
-                  <td>speaker diarization api</td>
+                  <td>Search | Competitors</td>
+                  <td>AWS Transcribe</td>
+                  <td>aws transcribe alternative, aws transcribe speaker diarization, amazon transcribe speaker diarization</td>
                   <td>Exact</td>
-                  <td>2,400</td>
-                  <td>$42.82</td>
-                  <td>/product/api</td>
+                  <td><code>https://www.pyannote.ai/speaker-diarization-api</code></td>
                 </tr>
                 <tr>
-                  <td>Core — Commercial API</td>
-                  <td>Voice Diarization</td>
-                  <td>voice diarization service</td>
-                  <td>Phrase</td>
-                  <td>880</td>
-                  <td>$34.10</td>
-                  <td>/product/api</td>
-                </tr>
-                <tr>
-                  <td>Competitors — Alternatives</td>
-                  <td>Deepgram Capture</td>
-                  <td>deepgram diarization alternative</td>
-                  <td>Phrase</td>
-                  <td>720</td>
-                  <td>$19.10</td>
-                  <td>/compare/deepgram</td>
-                </tr>
-                <tr>
-                  <td>Competitors — Alternatives</td>
-                  <td>AssemblyAI Capture</td>
-                  <td>assemblyai speaker diarization</td>
-                  <td>Phrase</td>
-                  <td>640</td>
-                  <td>$22.40</td>
-                  <td>/compare/assemblyai</td>
-                </tr>
-                <tr>
-                  <td>Integrations — ASR Stack</td>
-                  <td>Whisper Diarization</td>
-                  <td>whisper + speaker diarization</td>
-                  <td>Phrase</td>
-                  <td>1,900</td>
-                  <td>$28.50</td>
-                  <td>/integrations/whisper</td>
-                </tr>
-                <tr>
-                  <td>Enterprise — Real-Time</td>
-                  <td>Streaming Pipeline</td>
-                  <td>real time speaker diarization api</td>
+                  <td>Search | Competitors</td>
+                  <td>AssemblyAI</td>
+                  <td>assemblyai alternative, assemblyai speaker diarization, assemblyai diarization api</td>
                   <td>Exact</td>
-                  <td>980</td>
-                  <td>$36.20</td>
-                  <td>/enterprise</td>
+                  <td><code>https://www.pyannote.ai/speaker-diarization-api</code></td>
                 </tr>
                 <tr>
-                  <td>Branded — Protection</td>
-                  <td>Pyannote Core</td>
-                  <td>pyannote ai</td>
+                  <td>Search | Competitors</td>
+                  <td>Azure</td>
+                  <td>azure speech to text alternative, azure speaker diarization, azure speech to text speaker diarization</td>
                   <td>Exact</td>
-                  <td>720</td>
-                  <td>$5.63</td>
-                  <td>/</td>
+                  <td><code>https://www.pyannote.ai/speaker-diarization-api</code></td>
                 </tr>
                 <tr>
-                  <td>Branded — Protection</td>
-                  <td>Pyannote Cloud</td>
-                  <td>pyannoteai pricing</td>
+                  <td>Search | Competitors</td>
+                  <td>Deepgram</td>
+                  <td>deepgram alternative, deepgram speaker diarization, deepgram diarization api</td>
                   <td>Exact</td>
-                  <td>210</td>
-                  <td>$19.10</td>
-                  <td>/pricing</td>
+                  <td><code>https://www.pyannote.ai/speaker-diarization-api</code></td>
                 </tr>
                 <tr>
-                  <td>Negative Keyword List</td>
-                  <td>Exclusions (140+)</td>
-                  <td>free tutorial, mp3, dataset download</td>
-                  <td>Negative</td>
-                  <td>6,400</td>
-                  <td>$0.00</td>
-                  <td>Excluded</td>
+                  <td>Search | Competitors</td>
+                  <td>Google Speech-to-Text</td>
+                  <td>google speech to text alternative, google cloud speech to text speaker diarization, google speech to text diarization</td>
+                  <td>Exact</td>
+                  <td><code>https://www.pyannote.ai/speaker-diarization-api</code></td>
+                </tr>
+                <!-- Blurred locked rows -->
+                <tr class="is-blurred">
+                  <td>Search | Competitors</td>
+                  <td>NVIDIA NeMo</td>
+                  <td>nvidia nemo alternative, nvidia nemo speaker diarization, nvidia nemo diarization</td>
+                  <td>Exact</td>
+                  <td><code>https://www.pyannote.ai/speaker-diarization-api</code></td>
+                </tr>
+                <tr class="is-blurred">
+                  <td>Search | Competitors</td>
+                  <td>Picovoice Falcon</td>
+                  <td>picovoice falcon alternative, picovoice falcon speech recognition, picovoice speaker recognition</td>
+                  <td>Exact</td>
+                  <td><code>https://www.pyannote.ai/speaker-diarization-api</code></td>
+                </tr>
+                <tr class="is-blurred">
+                  <td>Search | Competitors</td>
+                  <td>Speechmatics</td>
+                  <td>speechmatics alternative, speechmatics speaker diarization, speechmatics api</td>
+                  <td>Exact</td>
+                  <td><code>https://www.pyannote.ai/speaker-diarization-api</code></td>
+                </tr>
+                <tr class="is-blurred">
+                  <td>Search | Competitors</td>
+                  <td>WhisperX</td>
+                  <td>whisperx alternative, whisperx speaker diarization, whisperx diarization pipeline</td>
+                  <td>Exact</td>
+                  <td><code>https://www.pyannote.ai/speaker-diarization-api</code></td>
+                </tr>
+                <tr class="is-blurred">
+                  <td>Search | Industry Use Cases</td>
+                  <td>Contact Centre / Call Centre AI</td>
+                  <td>ai call centres, call centers calls, accent translation call center ai, ai call center accent modification</td>
+                  <td>Exact</td>
+                  <td><code>https://www.pyannote.ai/enterprise</code></td>
+                </tr>
+                <tr class="is-blurred">
+                  <td>Search | Industry Use Cases</td>
+                  <td>Healthcare / Medical Scribing</td>
+                  <td>medical transcription outsourcing, abridge medical transcription, gotranscript medical transcription</td>
+                  <td>Exact</td>
+                  <td><code>https://www.pyannote.ai/enterprise</code></td>
+                </tr>
+                <tr class="is-blurred">
+                  <td>Search | Industry Use Cases</td>
+                  <td>Meeting Transcription</td>
+                  <td>meeting assistant software, automated meeting notes, board meeting minutes software</td>
+                  <td>Exact</td>
+                  <td><code>https://www.pyannote.ai/enterprise</code></td>
                 </tr>
               </tbody>
             </table>
