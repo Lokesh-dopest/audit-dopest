@@ -3309,8 +3309,6 @@ h2.h2 {
 
 .terms-table tbody td { color: var(--muted); }
 
-.terms-table tr.is-key td { color: var(--lime); font-weight: 600; }
-
 @media (max-width: 640px) {
   .terms-table th, .terms-table td { padding-left: 14px !important; padding-right: 14px !important; }
   .terms-table tbody th { width: 38%; }
