@@ -3259,3 +3259,59 @@ h2.h2 {
   .team-card { padding: 24px 20px; }
   .team-head { margin-bottom: 36px; }
 }
+
+/* =========================================================
+   COMMERCIAL TERMS (inside About)
+   ========================================================= */
+.about-terms {
+  margin-top: 32px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.terms-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.terms-table thead th {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--line-2);
+  font-family: var(--body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
+.terms-table tbody th,
+.terms-table tbody td {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+  font-family: var(--body);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.terms-table tbody tr:last-child th,
+.terms-table tbody tr:last-child td { border-bottom: 0; }
+
+.terms-table tbody th {
+  width: 34%;
+  font-weight: 500;
+  color: #fff;
+}
+
+.terms-table tbody td { color: var(--muted); }
+
+.terms-table tr.is-key td { color: var(--lime); font-weight: 600; }
+
+@media (max-width: 640px) {
+  .terms-table th, .terms-table td { padding-left: 14px !important; padding-right: 14px !important; }
+  .terms-table tbody th { width: 38%; }
+}
